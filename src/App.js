@@ -3,7 +3,8 @@ import { Routes, Route } from "react-router-dom";
 import Header from './components/Header';
 import MyNav from './components/MyNav';
 import Home from './components/Home';
-import BookTable from './components/BookTable';
+import BookingPage from './components/BookingPage';
+import ConfirmedBooking from './components/ConfirmedBooking.js';
 import Footer from './components/Footer';
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
       <MyNav />
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/book-table" element={<BookTable />}></Route>
+        <Route path="/book-table" element={<BookingPage />}></Route>
+        <Route path="/confirmation" element={<ConfirmedBooking /> }> </Route>
       </Routes>
       <Footer />
     </div>
