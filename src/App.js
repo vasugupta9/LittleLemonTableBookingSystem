@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div>
+    <>
       <Header />
       <MyNav />
       <Routes>
@@ -18,7 +18,7 @@ function App() {
         <Route path="/confirmation" element={<ConfirmedBooking /> }> </Route>
       </Routes>
       <Footer />
-    </div>
+    </>
   );
 }
 
